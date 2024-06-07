@@ -1,0 +1,42 @@
+header.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 13;
+    transition: 0.3s;
+
+    &.scroll {
+        box-shadow: 0 4px 6px #0e0e0e36;
+    }
+}
+.header__logo {
+    img {
+        max-width: 100%;
+    }
+}
+
+.header__nav {
+    ul {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 46px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 17px;
+                color: #1D2340;
+            }
+        }
+    }
+}

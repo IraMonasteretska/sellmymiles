@@ -1,0 +1,285 @@
+.sellmileswrap {
+    padding: 9px 0 0 0;
+}
+
+.sellmiles {
+    position: relative;
+    padding: 100px 115px;
+    min-height: 700px;
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .infobox,
+    .formbox {
+        position: relative;
+        z-index: 4;
+    }
+
+    .infobox {
+        width: 100%;
+        max-width: calc(100% - 410px);
+        flex: 0 0 calc(100% - 410px);
+        padding-top: 27px;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            max-width: 503px;
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .formbox {
+        width: 100%;
+        max-width: 410px;
+        flex: 0 0 410px;
+
+        form {
+            background: #fff;
+            width: 100%;
+            border-radius: 20px;
+            padding: 20px 20px 34px 20px;
+
+            .row {
+                margin-left: -5px;
+                margin-right: -5px;
+
+                .col-lg-6,
+                .col-12 {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+
+            .bluesbm {
+                border-radius: 10px;
+                max-width: 100%;
+                flex: 0 0 100%;
+                height: 48px;
+                margin-top: 15px;
+                font-size: 15px;
+            }
+
+            .infotext {
+                font-size: 15px;
+                position: relative;
+                color: #8F9BAD;
+                margin: 18px 0 0 0;
+                text-align: center;
+
+                img {
+                    width: 20px;
+                    vertical-align: middle;
+                    margin-top: -1px;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#4462E7, 0.78);
+        z-index: 2;
+    }
+
+
+}
+
+.sellmiles__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.icstatwrap {
+    padding: 50px 0;
+}
+
+.icstat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icstat__box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 63px;
+        background: rgba(#5E7BF9, 0.4);
+        position: absolute;
+        right: -80px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 64px;
+        flex: 0 0 64px;
+    }
+
+    p {
+        width: 100%;
+        max-width: calc(100% - 64px);
+        flex: 0 0 calc(100% - 64px);
+        margin: 0;
+        color: #1D2340;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 17px;
+
+        span {
+            display: block;
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    &:nth-child(1) {
+        max-width: 180px;
+        flex: 0 0 180px;
+    }
+
+    &:nth-child(2) {
+        max-width: 285px;
+        flex: 0 0 285px;
+    }
+
+    &:nth-child(3) {
+        max-width: 210px;
+        flex: 0 0 210px;
+    }
+
+    &:nth-child(4) {
+        max-width: 268px;
+        flex: 0 0 268px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+
+    // &::after {
+    //     content: 's';
+    // }
+}
+
+.stepssect {
+    padding: 100px 0 140px;
+
+    h3 {
+        margin-bottom: 36px;
+    }
+}
+
+.stepssect__boxes {
+    padding: 98px 85px 0 85px;
+
+    .row {
+        margin-left: -35px;
+        margin-right: -35px;
+
+        .col-xl-4 {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+}
+
+.stepssect__box {
+    border: 1px solid #405DDB;
+    border-radius: 20px;
+    padding: 73px 26px 41px;
+    text-align: center;
+    position: relative;
+    min-height: 211px;
+
+    p {
+        color: var(--second-text);
+        margin: 0;
+    }
+
+    // .title {
+    //     margin-bottom: 16px;
+    //     font-size: 22px;
+    //     color: var(--dark);
+    //     font-weight: 600;
+    // }
+
+    .imgwrap {
+        background: #fff;
+        width: 130px;
+        height: 118px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -65px;
+
+        img {
+           width: 100%;
+        }
+    }
+}
+
+.stepssect__plane {
+    height: 94px;
+    position: relative;
+    width: calc(100% - 170px);
+    margin: 0 auto;
+
+    .greyline {
+        width: 100%;
+        height: 3px;
+        background: var(--dark);
+        opacity: 0.1;
+        position: absolute;
+        top: 54px;
+        left: 0;
+    }
+
+    .planeimg {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 10%;
+    }
+}
+
