@@ -6,7 +6,7 @@ $(document).ready(function () {
             minimumResultsForSearch: Infinity,
         });
     }
-
+    
     // header
     $(window).on('scroll load', function () {
         if ($(this).scrollTop() > 50) {
@@ -48,8 +48,6 @@ $(document).ready(function () {
 
     // Testimonials
     var swiper = new Swiper(".testimsl", {
-        slidesPerView: 3,
-        spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -59,6 +57,21 @@ $(document).ready(function () {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+
+        breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+          },
     });
 
 

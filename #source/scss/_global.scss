@@ -14,6 +14,7 @@ html {
     flex: 1 1 auto;
 }
 
+
 .pagewrapper {
     min-height: 100%;
     display: flex;
@@ -183,3 +184,44 @@ h3 {
 }
 
 
+@media(max-width:1399.8px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    h1 {
+        font-size: 38px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    h1 {
+        font-size: 42px;
+    }
+}
+
+@media(max-width:767.8px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media(max-width:575.8px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
