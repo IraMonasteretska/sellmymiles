@@ -3,6 +3,7 @@
     --second-text: rgb(74, 79, 102);
     --blue: rgb(64, 93, 219);
 }
+
 // color: var(--dark);
 
 body,
@@ -14,7 +15,6 @@ html {
     flex: 1 1 auto;
 }
 
-
 .pagewrapper {
     min-height: 100%;
     display: flex;
@@ -25,6 +25,9 @@ html {
 body {
     font-family: "Inter", sans-serif;
     font-size: 16px;
+}
+
+body * {
     line-height: 150%;
 }
 
@@ -125,6 +128,38 @@ main.main {
         padding-right: 5px;
         font-size: 15px;
         transition: 0.3s;
+
+        &:focus {
+            border-color: #405DDB;
+        }
+
+        &::placeholder {
+            color: #8F9BAD;
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 66px;
+        width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #CCD1D9;
+        padding-left: 15px;
+        padding-right: 5px;
+        font-size: 15px;
+        transition: 0.3s;
+        padding-top: 10px;
+        outline: none;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--blue);
+            border-radius: 10px;
+        }
 
         &:focus {
             border-color: #405DDB;

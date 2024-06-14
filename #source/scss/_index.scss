@@ -554,7 +554,7 @@
     padding-bottom: 80px;
 
     .swiper-pagination {
-        bottom: 0;
+        bottom: 15px;
 
         .swiper-pagination-bullet {
             background: var(--dark);
@@ -733,7 +733,40 @@
     overflow: hidden;
 }
 
+.fixedelements {
+    position: fixed;
+    right: calc((100vw - 1450px) / 2);
+    bottom: 10px;
+    z-index: 5;
+    width: 72px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transform: translateY(20px);
+
+    .totop {
+        margin-bottom: 15px;
+        display: inline-block;
+        filter: drop-shadow(0 2px 4px rgba(#757575, 0.12));
+    }
+}
+
+.fixedelements.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media(max-width:1499.8px) {
+    .fixedelements {
+        right: calc((100vw - 1320px) / 2);
+    }
+}
+
 @media(max-width:1399.8px) {
+    .fixedelements {
+        right: calc((100vw - 1140px) / 2);
+    }
+    
     .sellmiles {
         padding: 60px;
         min-height: initial;
@@ -838,6 +871,9 @@
 }
 
 @media(max-width:1199.8px) {
+    .fixedelements {
+        right: calc((100vw - 960px) / 2);
+    }
 
     .sellmiles .formbox {
         max-width: 380px;
@@ -888,6 +924,9 @@
 }
 
 @media(max-width:991.8px) {
+    .fixedelements {
+        right: 15px;
+    }
 
     .sellmiles .infobox,
     .sellmiles .formbox {
@@ -1178,6 +1217,14 @@
 
     .contright .inputfield {
         margin-bottom: 10px;
+    }
+
+    .fixedelements img {
+        width: 100%;
+    }
+
+    .fixedelements {
+        width: 50px;
     }
 
 }
