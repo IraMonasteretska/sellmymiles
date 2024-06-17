@@ -131,19 +131,51 @@ $(document).ready(function () {
     if ($('.fixedelements').length) {
         const fixedElements = document.querySelector('.fixedelements');
         let lastScrollTop = 0;
-    
+
         window.addEventListener('scroll', function () {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
+
             if (scrollTop > 100) { // Показуємо блок при прокрутці більше ніж на 100px вниз
                 fixedElements.classList.add('visible');
             } else { // Ховаємо блок при прокрутці вгору до самого верху
                 fixedElements.classList.remove('visible');
             }
-    
+
             lastScrollTop = scrollTop;
         });
     }
+
+    // faq
+    $('.faqheader').click(function () {
+        $(this).toggleClass('active');
+        $(this).next('.faqbody').slideToggle();
+    });
+
+
+
+    var swiper = new Swiper(".testimsl2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+        },
+    });
+
+
+
+    // test form result
+    $('span.bluesbm').click(function () {
+        $('.formbox form').hide();
+        $('.formbox .formresult').show();
+    });
+
+    $('.formresult .backbtn').click(function () {
+        $('.formbox form').show();
+        $('.formbox .formresult').hide();
+    });
     
 
 })

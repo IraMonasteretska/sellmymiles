@@ -102,6 +102,20 @@ input[type=number] {
             clip-path: circle(100% at 50% 50%);
         }
     }
+
+    &.white {
+        background: #fff;
+        border: 1px solid #fff;
+        color: var(--dark);
+
+        &:before {
+            background: #405DDB;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
 }
 
 ul {

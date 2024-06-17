@@ -10,6 +10,7 @@
     border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     .infobox,
     .formbox {
@@ -17,7 +18,6 @@
         z-index: 4;
     }
 
-    
     .infobox {
         width: 100%;
         max-width: calc(100% - 410px);
@@ -54,12 +54,12 @@
         width: 100%;
         max-width: 410px;
         flex: 0 0 410px;
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
 
         form {
-            background: #fff;
             width: 100%;
-            border-radius: 20px;
-            padding: 20px 20px 34px 20px;
 
             .row {
                 margin-left: -5px;
@@ -81,18 +81,19 @@
                 font-size: 15px;
             }
 
-            .infotext {
-                font-size: 15px;
-                position: relative;
-                color: #8F9BAD;
-                margin: 18px 0 0 0;
-                text-align: center;
+        }
 
-                img {
-                    width: 20px;
-                    vertical-align: middle;
-                    margin-top: -1px;
-                }
+        .infotext {
+            font-size: 15px;
+            position: relative;
+            color: #8F9BAD;
+            margin: 18px 0 0 0;
+            text-align: center;
+
+            img {
+                width: 20px;
+                vertical-align: middle;
+                margin-top: -1px;
             }
         }
     }
@@ -766,7 +767,7 @@
     .fixedelements {
         right: calc((100vw - 1140px) / 2);
     }
-    
+
     .sellmiles {
         padding: 60px;
         min-height: initial;
@@ -1109,7 +1110,7 @@
     .icstatwrap {
         padding-top: 30px;
     }
-    
+
     .stepssect {
         padding: 50px 0;
     }
@@ -1180,7 +1181,8 @@
         font-size: 18px;
     }
 
-    .testimsl .swiper-button-next, .testimsl .swiper-button-prev {
+    .testimsl .swiper-button-next,
+    .testimsl .swiper-button-prev {
         width: 36px;
         height: 36px;
     }
