@@ -1,0 +1,129 @@
+.faqhero {
+    padding: 9px 0 80px;
+}
+
+.faqhero__wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    min-height: 460px;
+    position: relative;
+    padding: 54px 100px;
+
+    h1 {
+        position: relative;
+        z-index: 2;
+        margin-top: 57px;
+        max-width: 637px;
+    }
+
+    &>img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.breadcrumsblock.white {
+
+    ul li,
+    ul li a {
+        color: #fff;
+    }
+
+    ul li:after {
+        background: url(../img/arrow-breadcrumb-white.svg) no-repeat center / 100%;
+    }
+}
+
+.questions {
+    border-radius: 30px 30px 0 0;
+    background: #F5F5F7;
+    padding: 120px 0;
+}
+
+.questions__box {
+    border-top: 1px solid rgba(#5E7BF9, 0.4);
+    padding: 26px 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .title {
+        position: relative;
+        padding-left: 50px;
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--dark);
+        margin: 0;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url('../img/faqarr.svg') no-repeat center / 100%;
+        }
+    }
+
+    .descr {
+        p {
+            font-size: 17px;
+            color: var(--second-text);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.callbacksect.white {
+    background: #fff;
+}
+
+@media(max-width:1399.8px) {
+    .questions {
+        padding: 100px 0;
+    }
+
+    .faqhero {
+        padding-bottom: 50px;
+    }
+
+    .questions__box .descr p {
+        font-size: 16px;
+    }
+
+    .questions__box .title {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .faqhero__wrapper {
+        min-height: 400px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .questions {
+        padding: 70px 0;
+    }
+
+    .faqhero__wrapper {
+        padding: 40px;
+    }
+
+    .questions__box .title {
+        margin-bottom: 20px;
+    }
+}
