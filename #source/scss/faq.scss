@@ -1,5 +1,7 @@
 .faqhero {
     padding: 9px 0 80px;
+
+
 }
 
 .faqhero__wrapper {
@@ -126,4 +128,33 @@
     .questions__box .title {
         margin-bottom: 20px;
     }
+}
+
+@media(max-width:575.8px) {
+    .faqhero__wrapper {
+        padding: 30px 20px;
+    }
+
+    .faqhero__wrapper {
+        min-height: 320px;
+    }
+
+    .questions {
+        border-radius: 20px 20px 0 0;
+        padding: 50px 12px;
+    }
+
+    .questions__box .title {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .questions__box {
+        margin-bottom: 15px;
+    }
+
+    .questions__box .title {
+        margin-bottom: 10px;
+    }
+
 }
